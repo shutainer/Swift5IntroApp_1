@@ -22,6 +22,8 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         scrollView.isPagingEnabled = true
         SetUpScroll()
         
+        
+        
         for i in 0...4 {
             let animationView = AnimationView()
             let animation = Animation.named(onboardArray[i])
@@ -40,7 +42,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     func SetUpScroll() {
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: view.frame.size.width * 5, height: scrollView.frame.size.height)
-        
+
         for i in 0...4{
             let onboardLabel = UILabel(frame: CGRect(x: CGFloat(i) * view.frame.size.width, y: view.frame.size.height/3, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
             onboardLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
@@ -48,7 +50,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             onboardLabel.text = onboardStringArray[i]
             scrollView.addSubview(onboardLabel)
         }
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

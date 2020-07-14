@@ -45,13 +45,30 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Movie View Controller-->
         <scene sceneID="lDK-Xc-jmM">
             <objects>
-                <viewController id="GBC-Ia-6nx" sceneMemberID="viewController">
+                <viewController id="GBC-Ia-6nx" customClass="LoginMovieViewController" customModule="Swift5IntroApp_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ts-JH-YDH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.01" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZJ-4z-4sK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzV-7o-65H">
+                                <rect key="frame" x="176" y="433" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="login:" destination="GBC-Ia-6nx" eventType="touchUpInside" id="aUP-QK-Hxn"/>
+                                    <segue destination="J56-dU-zVQ" kind="show" id="2fn-Zy-eq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="awk-Gd-LJa"/>
                     </view>
@@ -60,6 +77,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DT-Gb-MV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1802.8985507246377" y="128.57142857142856"/>
+        </scene>
+        <!--Base View Controller-->
+        <scene sceneID="S9A-Qg-NjE">
+            <objects>
+                <viewController id="J56-dU-zVQ" customClass="BaseViewController" customModule="Swift5IntroApp_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fiC-ON-V3t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4v9-bO-C2L"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MNG-QD-cVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpT-Vb-Scm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xci-QR-naY">
